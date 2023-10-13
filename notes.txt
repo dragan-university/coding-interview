@@ -1,0 +1,87 @@
+How to read input
+=================
+
+C++
+---
+
+# Read integer
+int x;
+cin >> x;
+
+# Read line with spaces
+string s;
+cin.ignore();
+getline(cin, s);
+
+# read all integers from a string and store it in a vector
+see example string_to_vector_int.cpp
+
+
+Python3
+-------
+
+# Reading input from STDIN
+name = input()
+
+# Read integer
+x = int(input())
+
+# Read line with spaces
+
+# read all integers from a string and store it in a vector
+
+How to read from text files containg test cases
+===============================================
+
+C++
+---
+see example in search/ice-cream-parlor.cpp
+also example in cpp/cpp/file_ex.cpp
+
+
+How to print
+============
+
+C++
+---
+
+# Print double
+double d = 3.14;
+cout.precision(2);
+cout << fixed << d << endl;
+
+Python3
+-------
+
+# Writing output to STDOUT
+print('Hi, %s.' % name)
+print("Hi, %s.".format(name))
+
+
+How to measure time execution
+=============================
+
+C++
+---
+#include <ctime>
+
+clock_t tstart = clock();
+foo();
+cout << "Time taken: " << (double)((clock() - tstart)/CLOCKS_PER_SEC) << endl;
+
+Python
+------
+from time import clock
+
+def test_large_number_of_buildings():
+    btime = clock()
+    function_to_mesure()
+    print("time " + str(clock()-btime))
+
+Python How-to
+=============
+
+How to print without newline or space
+-------------------------------------
+from __future__ import print_function (use this only in Python 2)
+print('.', end='')

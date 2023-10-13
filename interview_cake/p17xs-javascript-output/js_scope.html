@@ -1,0 +1,27 @@
+<!-- 
+    https://www.interviewcake.com/question/python/js-scope
+    
+    it prints 'undefined'
+    because variable is defined in the logIt function scope
+    but the value is assigned only after the console print, so the
+    value is undefined at that point.
+
+    How to run this page:
+    - open it in web browser
+    - inspect the page and check the console output
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<script type="text/javascript">
+    var text = 'outside'
+    function logIt() {
+        console.log(text)
+        var text = 'inside'
+    }
+    logIt()
+</script>
+
+</body>
+</html>

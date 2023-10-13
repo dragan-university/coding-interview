@@ -1,0 +1,16 @@
+*.class
+*.exe
+*.o
+*.obj
+*.out
+*.pyc
+.browse*
+.cache
+.cproject
+.idea
+.project
+.vscode
+Debug*
+ctci/ctci-book/*.pdf
+__pycache__
+.DS_Store
